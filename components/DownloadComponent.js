@@ -1,5 +1,8 @@
+import Image from "next/image";
 import React from "react";
 import { Container } from "react-bootstrap";
+import apple from "../public/assets/apple.png";
+import google from "../public/assets/google-play.png";
 
 function DownloadComponent() {
   return (
@@ -12,13 +15,19 @@ function DownloadComponent() {
           laying out print,
         </p>
         <Container className="img-download">
-          <img
-            src="https://uploads.strikinglycdn.com/static/icons/app-badges/google-play.png"
+          <Image
+            src={apple}
             className="img-fluid"
+            alt="google-play"
+            width={200}
+            height={200}
           />
-          <img
-            src="https://uploads.strikinglycdn.com/static/icons/app-badges/app-store.png"
+          <Image
+            src={google}
             className="img-fluid"
+            alt="apple-store"
+            width={200}
+            height={200}
           />
         </Container>
       </Container>
